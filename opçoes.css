@@ -13,8 +13,8 @@ body {
     width: 600px;
     height: 300px;
     overflow: hidden;
-    border: 2px solid #333;
-    background-color: #fff;
+    border: 2px solid #ff0000;
+    background-color: #ff0000;
   }
   
   .slide {
