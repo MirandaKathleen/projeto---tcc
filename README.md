@@ -10,14 +10,14 @@
  
 ![](./docs/Trello.png)
 
-## (Diagramas de Casos de Uso)
+## Diagramas de Casos de Uso
 ![](./docs/dcu.jpeg)
 
-##  (DER)
+##  Gráfico de Grant
 ![](./docs/grafico%20gant.png)
 
-## Padaria (Canvas)
+## Modelo Canvas
 ![](./docs/modelo%20canva%20(4).png)
 
-## Padaria (Gantt)
-![](./docs/Gantt.png)
+## (DER)
+![](./docs/diagramaa2.png)
