@@ -4,6 +4,7 @@ const nextBtn = document.querySelector('.next');
 
 let slides = [];
 let currentIndex = 0;
+let imagemSelecionada = null;
 
 function showSlide(index) {
   slides.forEach(slide => slide.classList.remove('active'));
@@ -15,6 +16,17 @@ function createSlideElement(src) {
   slide.className = 'slide';
   const img = document.createElement('img');
   img.src = src;
+  img.alt = 'Imagem do usuário';
+  img.classList.add('slide-img');
+
+  // Evento de clique para seleção
+  img.addEventListener('click', () => {
+    slides.forEach(s => s.classList.remove('selecionado'));
+    slide.classList.add('selecionado');
+    imagemSelecionada = src;
+    localStorage.setItem('imagemSelecionada', JSON.stringify(imagemSelecionada));
+  });
+
   slide.appendChild(img);
   return slide;
 }
@@ -48,3 +60,4 @@ nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 });
+
