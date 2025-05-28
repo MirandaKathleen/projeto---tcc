@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     nextButton.addEventListener("click", function () {
       changeSlide(activeIndex + 1);
+
+      
     });
   });
+  
+  
 });
